@@ -1,4 +1,4 @@
-module github.com/Cheb-design/chebnew/v1
+module github.com/Cheb-design/chebnew/v2
 
 go 1.15
 
