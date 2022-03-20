@@ -6,9 +6,9 @@ import (
 	ch "github.com/Cheb-design/cheb"
 )
 
-func HelloNew() {
+func HelloNew(useName string) {
 
 	ch.Hello()
-	fmt.Println("Finish")
+	fmt.Println("Hello,", useName, "!")
 
 }
