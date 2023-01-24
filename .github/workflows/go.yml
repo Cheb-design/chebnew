@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: binary file
-          path: main
+          path: chebnew.go
