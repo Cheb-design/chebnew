@@ -21,8 +21,16 @@ jobs:
       with:
         go-version: 1.19
 
+    - run: mkdir -p bin
+
     - name: Build
-      run: go build -v ./...
+      run: go build -o bin/main -v ./...
 
     - name: Test
       run: go test -v ./...
+      
+    - name: Upload
+      uses: actions/upload-artifact@v3
+      with:
+          name: binary file
+          path: bin/main
